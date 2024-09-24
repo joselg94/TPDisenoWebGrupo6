@@ -202,9 +202,9 @@ div a{
     margin: auto;
     width: 60%;
 }
-@media (max-width: 400px) {  /*cuando el dispositivo es como máximo de 700px*/
+@media (max-width: 768px) {  
 
-    input:checked  ~ ul{   /*muestra todas el contenido de todas las etiquetas ul */
+    input:checked  ~ ul{   
         display:block;
     }
 
