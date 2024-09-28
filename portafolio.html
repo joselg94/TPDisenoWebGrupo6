@@ -8,17 +8,25 @@
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="soporte.html">Soporte</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="trabajo-equipo.png" alt="Logo" />
+            </a>
+        </div>
+        
+        <input type="checkbox" id="menu">  
+        <label for="menu"> ☰ </label>
+        
+        <ul class="menu">
+            <li><a href="index.html" >Inicio</a></li>
+            <li><a href="nosotros.html" >Nosotros</a></li>
+            <li><a href="servicios.html" >Servicios</a></li>
+            <li><a href="portafolio.html" class="active">Portafolio</a></li>
+            <li><a href="soporte.html" >Soporte</a></li>
+            <li><a href="contacto.html" >Contacto</a></li>
         </ul>
     </nav>
-
     <main>
         <div>
             <p>En Contrucción</p>
@@ -27,10 +35,14 @@
 
     <footer class="footer-content">
         <div></div>
-        <div>
-            <p>Sitio desarrollado por práctica para materia diseño y desarrollo web.</p>
-            <div class="border"></div>
-            <p>© 2024 Todos los derechos reservados.</p>
+        <div class="text-footer">
+            <div class="divide">
+                <p><strong>Materia:</strong> Diseño y Desarrollo Web</p>
+                <p><strong>Curso:</strong> 2do Cuatrimestre</p>
+                <p><strong>Grupo:</strong> 06</p>
+            </div>
+            <!-- <div class="border"></div> -->
+            <p>© Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
         </div>
         <img src="uade.jpeg" alt="" class="footer-image">
     </footer>
