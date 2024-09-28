@@ -7,16 +7,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="trabajo-equipo.png" alt="Logo" />
+            </a>
+        </div>
+        
         <input type="checkbox" id="menu">  
         <label for="menu"> ☰ </label>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="soporte.html">Soporte</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+        
+        <ul class="menu">
+            <li><a href="index.html" >Inicio</a></li>
+            <li><a href="nosotros.html" class="active">Nosotros</a></li>
+            <li><a href="servicios.html" >Servicios</a></li>
+            <li><a href="portafolio.html" >Portafolio</a></li>
+            <li><a href="soporte.html" >Soporte</a></li>
+            <li><a href="contacto.html" >Contacto</a></li>
         </ul>
     </nav>
     <main class="nosotros">
@@ -26,46 +33,50 @@
             <div class="team-member">
                 <img src="caro.jpeg" alt="Foto integrante 1">
                 <h3>Jokasta Perdomo</h3>
-                <a href="https://www.figma.com/proto/2x4SjJK24WkjZeNQN3vY3a/Jokasta-Perdomo-Figma?node-id=0-1&t=C65jdZMJa1MB0Ou1-1">Ir al prototipo</a>
-                <a href="https://jokastacarolina.github.io/portfolio/">Ir al Portfolio</a>
+                <a href="https://www.figma.com/proto/2x4SjJK24WkjZeNQN3vY3a/Jokasta-Perdomo-Figma?node-id=0-1&t=C65jdZMJa1MB0Ou1-1" target="_blank">Ir al prototipo</a>
+                <a href="https://jokastacarolina.github.io/portfolio/" target="_blank">Ir al Portfolio</a>
             </div>
 
             <div class="team-member">
                 <img src="profileImage.jpeg" alt="Foto integrante 2">
                 <h3>Jose Luis Gil Sanchez</h3>
-                <a href="https://www.figma.com/design/QJif5MPbhjehFjpA35vMCb/Portfolio-JoseGil?node-id=0-1&t=zdWFyTA5Ge7dkOnb-1">Ir al prototipo</a>
-                <a href="https://joselg94.github.io/portfolio/">Ir al Portfolio</a>
+                <a href="https://www.figma.com/design/QJif5MPbhjehFjpA35vMCb/Portfolio-JoseGil?node-id=0-1&t=zdWFyTA5Ge7dkOnb-1" target="_blank">Ir al prototipo</a>
+                <a href="https://joselg94.github.io/portfolio/" target="_blank">Ir al Portfolio</a>
             </div>
 
             <div class="team-member">
                 <img src="foto_pablo.jpeg" alt="Foto integrante 3">
                 <h3>Pablo Tocalini</h3>
-                <a href="https://www.figma.com/design/2JCT5ZFAQgZE3lQAIk6u0L/Portfolio?node-id=0-1&t=L4AVKr4isFgShJwf-1">Ir al prototipo</a>
-                <a href="https://pablotocalini.github.io/DyDWeb-2688-sitio-web-portfolio-profesional-pablo-tocalini/">Ir al Portfolio</a>
+                <a href="https://www.figma.com/design/2JCT5ZFAQgZE3lQAIk6u0L/Portfolio?node-id=0-1&t=L4AVKr4isFgShJwf-1" target="_blank">Ir al prototipo</a>
+                <a href="https://pablotocalini.github.io/DyDWeb-2688-sitio-web-portfolio-profesional-pablo-tocalini/" target="_blank">Ir al Portfolio</a>
             </div>
 
             <div class="team-member">
                 <img src="guada.jpg" alt="Foto integrante 4">
                 <h3>Guadalupe Lanzara</h3>
-                <a href="https://www.figma.com/design/KNIuoRpiSoNfnWDIuqtX51/Untitled?node-id=8-51&m=dev&t=igGj23YVEVgwsxPb-1">Ir al prototipo</a>
-                <a href="https://glanzara2024.github.io/portfolio-1/">Ir al Portfolio</a>
+                <a href="https://www.figma.com/design/KNIuoRpiSoNfnWDIuqtX51/Untitled?node-id=8-51&m=dev&t=igGj23YVEVgwsxPb-1" target="_blank">Ir al prototipo</a>
+                <a href="https://glanzara2024.github.io/portfolio-1/" target="_blank">Ir al Portfolio</a>
             </div>
 
             <div class="team-member">
                 <img src="tobias.jpeg" alt="Foto integrante 5">
                 <h3>Tobias Liuboschitz</h3>
-                <a href="#Figma" >Ir al prototipo</a>
-                <a href="https://tliuboschitz.github.io/tpddw/">Ir al Portfolio</a>
+                <a href="#Figma" target="_blank">Ir al prototipo</a>
+                <a href="https://tliuboschitz.github.io/tpddw/" target="_blank">Ir al Portfolio</a>
             </div>
         </section>
     </main>
 
     <footer class="footer-content">
         <div></div>
-        <div>
-            <p>Sitio desarrollado por práctica para materia diseño y desarrollo web.</p>
-            <div class="border"></div>
-            <p>© 2024 Todos los derechos reservados.</p>
+        <div class="text-footer">
+            <div class="divide">
+                <p><strong>Materia:</strong> Diseño y Desarrollo Web</p>
+                <p><strong>Curso:</strong> 2do Cuatrimestre</p>
+                <p><strong>Grupo:</strong> 06</p>
+            </div>
+            <!-- <div class="border"></div> -->
+            <p>© Todos los derechos reservados - Sitio desarrollado para uso educativo - 2024</p>
         </div>
         <img src="uade.jpeg" alt="" class="footer-image">
     </footer>

@@ -1,37 +1,40 @@
-body {
+:root {
+    --background-footer-navbar: #1B4965;
+    --background-main: #e0eff1;
+    --font-size-title: 3rem;
+    --font-size-names: 1.5rem;
+    --font-size-nav: 1rem;
+    --font-family: ;
+    --font-color: #FFFFFF;
+    --font-color-card: #000000
+}
+
+
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0eff1;
+    background-color: var(--background-main);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Estilos para el nav */
-
-
-/* Estilos para el main */
 main {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     align-items: center;
+    flex: 1;
 }
 
-/* Estilo del título */
 main h1 {
-    font-size: 36px;
-    color: #1B4965;
+    font-size: var(--font-size-title);
+    color: var(--background-footer-navbar);
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Estilos de la imagen */
-img {
-    /* max-width: 600px; */
-    height: auto;
-    justify-self: center;
-}
-
-/* Estilos para los divs circulares */
 .description-container {
     display: flex;
     flex-direction: column;
@@ -40,7 +43,7 @@ img {
 }
 
 .description-box {
-    border: 4px solid #1B4965;
+    border: 4px solid var(--background-footer-navbar);
     border-radius: 4%;
     padding: 20px;
     width: 80%;
@@ -51,62 +54,70 @@ img {
 
 /* Estilos para el footer */
 footer {
-    background-color: #1B4965;
-    color: #FFFFFF;
+    background-color: var(--background-footer-navbar);
+    color: var(--font-color);
     text-align: center;
     padding: 10px;
-    /* position: fixed; */
     bottom: 0;
 }
 
-/* Contenedor del equipo */
+.divide {
+    display: flex;
+    justify-content: space-between;
+}
 .team-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; /* Para que las cajas se ajusten si la pantalla es pequeña */
+    flex-wrap: wrap; 
     gap: 20px;
+    border: 3px solid var(--background-footer-navbar);
+    margin: 2%;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: #CAE9FF;
+    max-height: 100%;
 }
 
-/* Estilo de las cajas de integrantes */
+
 .team-member {
-    background-color: #FFFFFF;
-    border: 2px solid #1B4965;
+    align-content: center;
     border-radius: 10px;
-    padding: 20px;
-    width: 200px; /* Ajusta este valor para modificar el tamaño de las cajas */
+    /* padding: 20px; */
+    /* width: 200px;  */
     text-align: center;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Añade sombra */
+
 }
 
 .team-member img {
-    width: 90%;
-    height: 70%;
-    border-radius: 50%;
+    width: 15rem; 
+    height: 15rem; 
+    border-radius: 50%; 
     margin-bottom: 10px;
+    object-fit: cover; 
 }
 
 .team-member h3 {
     margin: 10px 0;
-    font-size: 18px;
-    color: #000000;
+    font-size: var(--font-size-names);
+    color: var(--font-color-card);
 }
 
-/* Estilos para los enlaces */
+
 .team-member a {
     display: block;
     margin-top: 5px;
     text-decoration: none;
-    color: #1B4965;
+    color: var(--background-footer-navbar);
     font-weight: bold;
 }
 
 .team-member a:hover {
-    color: blue; /* Cambia de color al pasar el mouse */
+    color: blue; 
 }
 
 .team-title {
     text-align: center;
-    color: #000000;
+    color: var(--font-color-card);
     margin-bottom: 5%;
     
 }
@@ -117,52 +128,46 @@ footer {
 }
 
 
-.menu-icon {
-    display: none; /* Oculta el icono de menú en pantallas grandes */
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-icon .bar {
-    height: 3px;
-    width: 25px;
-    background-color: white;
-    margin: 3px 0;
-}
-
-.menu-toggle {
-    display: none;
-}
-
-
-/* nuevos estilos navbar -------------------------------------*/
-
-input {                        /*no muestra el botón de menu */
+input {             
     display: none;     
 }
-label {                       /*no muestra la etiqueta ☰ */
+label { 
     display:none;
 }
-ul{                           /*muestra los botones con la disposición horizontal para notebook */
+ul{
     display: flex;
-    /* justify-content: space-between; */
-    margin-top:0;
+    margin:0;
     padding: 0;
 }
 
 
-li {                     /*determina la propiedad de cada botón*/
+li {  
     display: block;
     margin: 10px;
     padding: 10px;
     list-style: none;
     width: 200px;
     text-align: center;
-    font-size: 16px;
+    font-size: var(--font-size-nav);
 }
 
-/*Estilo cuando el mouse pasa encima de cada link del menu*/
-li:hover {                        /*determina la propiedad de cada botón cuando se posiciona encima*/
+.custom-button {
+    background-color: var(--background-footer-navbar);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: var(--font-size-nav);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 20rem;
+}
+
+.custom-button:hover {
+    background-color: #123953;
+}
+
+li:hover {                       
     filter: brightness(110%);
 }
 
@@ -171,14 +176,16 @@ li:hover {                        /*determina la propiedad de cada botón cuando
 }
 ul li a{
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--font-color);
 }
 
 nav {
-    background-color: #1B4965;
-    color: #FFFFFF;
+    background-color: var(--background-footer-navbar);
+    color: var(--font-color);
     text-align: center;
     padding: 0% 20%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .image-div {
@@ -191,7 +198,7 @@ nav {
 }
 
 ul li a:hover{
-    color: blue;
+    color: gray;
 }
 div a{
     color: red;
@@ -202,26 +209,58 @@ div a{
     margin: auto;
     width: 60%;
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.2% 0% 0.2% 2%;
+}
+
+.navbar .logo img {
+    width: 100px;
+    height: auto;
+    background-color: var(--background-main);
+    border-radius: 50%;
+}
+
+
+.navbar .menu li {
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.active{
+    background-color: #62B6CB;
+}
+
+.navbar .menu li a:hover {
+    background-color: #555;
+} 
+
 @media (max-width: 768px) {  
 
-    input:checked  ~ ul{   
-        display:block;
+    input:checked ~ .menu {   
+        display: flex; 
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar .logo img {
+        width: 60px;
+    }
+    .logo {
+        padding: 2%;
     }
 
-    input:checked ~ label {   /*muestra todo el contenido de todas las etiquetas label */
-        background: #1B4965; 
-    }
-
-    label:hover{                /*cambia el color de ☰ */
-        background: #1B4965;
-    }
-
-    li{                         /*elimina el margen  de cada botón */
-        margin: 0px;
-        text-align: left;
-        }
-
-    label {                      /* dibuja la etiqueta ☰  con formato botón */
+    /* Estilo del ícono de hamburguesa */
+    label {
         box-sizing: border-box;
         display: block;
         border: 1px solid black;
@@ -233,43 +272,42 @@ div a{
         text-align: center;
         user-select: none;
         background-color: cadetblue;
-
-    }
-        
-    ul{                          /*deja de mostrar el bloque contenedor de los botones horizontales */
-        display: none;
-        background-color:#1B4965;
-
+        cursor: pointer; 
     }
 
+    /* Elimina el margen de cada botón */
+    li {
+        margin: 0px;
+        text-align: left;
+    }
+
+    .menu {
+        display: none; 
+        position: absolute;
+        background-color: var(--background-footer-navbar);
+
+        z-index: 1000; 
+        margin-top: 10rem;
+    }
+    .navbar {
+        padding: 0;
+        padding-right: 2%;
+    }
     main {
-        flex-direction:column;
+        flex-direction: column;
         align-items: center;
         padding: 10px;
         margin-bottom: 20%;
     }
 
-    /* Asegurar que el contenedor de descripción esté arriba de la imagen */
-    .description-container {
-        /* order: 1; */
-    }
-
     img {
-        width: 100%; /* Reducir el tamaño de la imagen */
+        width: 100%;
         height: auto;
     }
 
     .description-box {
-        max-width: 90%; /* Ajustar el tamaño del contenedor para que sea más pequeño */
+        max-width: 90%;
         padding: 15px;
-    }
-
-    h1 {
-        font-size: 28px; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
-    }
-
-    nav {
-        padding: 3%;
     }
 
     .footer-content {
@@ -284,8 +322,23 @@ div a{
     .footer-image {
         width: 30%;
     }
+    .menu {
+        display: none;
+    }
+
+    .text-footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 
 }
+
+
+
+
+
+
 
 
 
