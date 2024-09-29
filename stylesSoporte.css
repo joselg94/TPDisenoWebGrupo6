@@ -110,6 +110,7 @@
 }
 
 
+
 @media (max-width: 768px) {
     .service img {
         width: 5rem; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
@@ -128,7 +129,7 @@
     position: absolute;
     margin-top: 28rem;
     width: 100%;
-    margin-left: 5rem;
+/*     margin-left: 5rem; */
     margin-right: 5rem;
 
     
