@@ -63,9 +63,9 @@
     width: 14rem; /* Imágenes ocupan el 100% del ancho del contenedor */    
     border-radius: 50%;
     height: 14rem;
-    margin-left:3rem;
+/*     margin-left:3rem;
     margin-right: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
    
     
 }
@@ -115,9 +115,9 @@
     .service img {
         width: 5rem; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
         height: 5rem;
-        margin-top: 1rem;
+/*         margin-top: 1rem;
         margin-left:2rem;
-        margin-right: 2rem;
+        margin-right: 2rem; */
     }
 
     .nosotros5{
