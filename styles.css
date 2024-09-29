@@ -129,13 +129,13 @@ footer {
 }
 
 
-input {             
+nav input {             
     display: none;     
 }
-label { 
+nav label { 
     display:none;
 }
-ul{
+nav ul{
     display: flex;
     margin:0;
     padding: 0;
@@ -168,14 +168,14 @@ nav ul li {
     background-color: #123953;
 }
 
-li:hover {                       
+nav li:hover {                       
     filter: brightness(110%);
 }
 
 .footer-image {
     width: 7%;
 }
-ul li a{
+nav ul li a{
     text-decoration: none;
     color: var(--font-color);
 }
@@ -201,7 +201,7 @@ nav {
     justify-content: space-around;
 }
 
-ul li a:hover{
+nav ul li a:hover{
     color: gray;
 }
 div a{
@@ -367,7 +367,7 @@ textarea {
 }
 @media (max-width: 768px) {  
 
-    input:checked ~ .menu {   
+    nav input:checked ~ .menu {   
         display: flex; 
         flex-direction: column;
         width: 100%;
@@ -380,7 +380,7 @@ textarea {
     }
 
     /* Estilo del ícono de hamburguesa */
-    label {
+    nav label {
         box-sizing: border-box;
         display: block;
         border: 1px solid black;
@@ -396,7 +396,7 @@ textarea {
     }
 
     /* Elimina el margen de cada botón */
-    li {
+    nav ul li {
         margin: 0px;
         text-align: left;
     }
