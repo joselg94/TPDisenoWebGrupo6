@@ -260,13 +260,13 @@ div a{
     flex-direction: column;  
     align-items: center;  
     font-size: 1.2rem;  
-    border: 4px solid #1b4965;  
+    border: 4px solid var(--background-footer-navbar);  
     border-radius: 4%;  padding: 0.5rem; 
     max-width: 50rem;  
     width: 90%;  
     overflow: hidden;  
     text-align: center;  
-    color: #1b4965;  
+    color: var(--background-footer-navbar);  
     margin: 1rem auto;
 }
 .contact-information-continer 
@@ -288,14 +288,14 @@ p {
     justify-content: space-between;  
     align-items: center;  
     font-size: 1.2rem;  
-    border: 4px solid #1b4965; 
+    border: 4px solid var(--background-footer-navbar); 
     border-radius: 4%;  
     padding: 1rem; 
     max-width: 700px;  
     width: 100%;  
     overflow: hidden;  
     text-align: center; 
-    color: #1b4965;  
+    color: var(--background-footer-navbar);  
     margin: 0 auto;
 }
 form {  
@@ -314,7 +314,7 @@ form label {
     text-align: left;  
     margin-right: 1rem;
 }
-input[type='text'],input[type='email'],input[type='tel'],textarea {  
+.label-input-container input[type='text'],input[type='email'],input[type='tel'],textarea {  
     flex: 2;  
     width: 100%; 
     /* Asegurar que todos los inputs y textarea ocupen el 100% del ancho disponible */  
@@ -322,21 +322,23 @@ input[type='text'],input[type='email'],input[type='tel'],textarea {
     /* Evitar que el padding haga que los elementos crezcan más allá del contenedor */  
     padding: 0.5rem;
 }
-textarea {  
+.label-input-container textarea {  
     height: 6rem;
 }
 .submit {  
     display: flex;  justify-content: center;  
     margin-top: 1rem;  
     width: 100%;
-}input[type='submit'] {  
+}
+.submit input[type='submit'] {  
     padding: 0.8rem 3rem;  
     cursor: pointer;  
     font-size: 1rem;  
-    background-color: #1b4965;  
-    color: #ffffff;  
+    background-color: var(--background-footer-navbar);  
+    color: var(--font-color);  
     width: auto;  
-    max-width: 800px;}
+    max-width: 800px;
+}
 .office-section {  
     text-align: center;  
     margin: 1rem auto;  
@@ -352,7 +354,7 @@ textarea {
 .map-container img {  
     max-width: 100%;  
     height: auto;  
-    border: 2px solid #1b4965;  
+    border: 2px solid var(--background-footer-navbar);  
     border-radius: 4%;
 }
 .office-info {  
