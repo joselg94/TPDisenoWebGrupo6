@@ -1,3 +1,25 @@
 main {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .description-box-serv {
+        width: 90%;
+        font-size: 8px;
+        /
+        margin: 20px; /* Separación de 10px alrededor de cada caja */
+        align-items: center;
+    }
+    .contenedor-team {
+        width: 90%;
+        display: block;
+        margin: 20px; /* Separación de 10px alrededor de cada caja */
+        align-items: center;
+        
+    }
+    .team-member-serv {
+        width: 90%;
+        margin: 20px; /* Separación de 10px alrededor de cada caja */
+        align-items: center;
+    }
+}
