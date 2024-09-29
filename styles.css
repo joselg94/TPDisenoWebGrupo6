@@ -360,6 +360,75 @@ textarea {
     flex: 1;  
     font-size: 1.1rem;
 }
+/*Estilos Servicios*/
+.description-box-serv {
+    border: 4px solid #1B4965;
+    border-radius: 4%;
+    padding: 20px;
+    width: 90%;
+    /* height: 50vh; */
+    /* text-align: center; */
+    text-align: justify;
+    color: #1B4965;
+    margin-left: 5%;
+    margin-top: 2%;
+    /* display: flex; */
+}
+/* Estilo del título */
+main h1 {
+    font-size: 36px;
+    color: #1B4965;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Estilo de las cajas de integrantes */
+.contenedor-team {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;/*10px;*/
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.team-member-serv {
+    /* background-color: #FFFFFF; */
+    border: 2px solid #1B4965;
+    /* border-radius: 10px; */
+    padding: 20px;
+    /*width: 200px;*/ /* Ajusta este valor para modificar el tamaño de las cajas */
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Añade sombra*/
+    margin-left: 5%;
+}
+
+.team-member-serv img {
+    width: 90%;
+    height: 70%;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+}
+
+.team-member-serv h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Estilos para los enlaces */
+.team-member-serv a {
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #1B4965;
+    font-weight: bold;
+}
+
+.team-member-serv a:hover {
+    color: blue; /* Cambia de color al pasar el mouse */
+}
+
 @media (max-width: 900px){
     .navbar .logo img {
         width: 3rem;
