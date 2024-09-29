@@ -245,6 +245,118 @@ div a{
     background-color: #555;
 } 
 
+/*! Estilos pagina contacto pablo - escritorio */
+.contact-main {  
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+}
+.contact-information-continer {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    font-size: 1.2rem;  
+    border: 4px solid #1b4965;  
+    border-radius: 4%;  padding: 0.5rem; 
+    max-width: 50rem;  
+    width: 90%;  
+    overflow: hidden;  
+    text-align: center;  
+    color: #1b4965;  
+    margin: 1rem auto;
+}
+.contact-information-continer 
+p {  
+    margin: 1rem 0; 
+    overflow-wrap: break-word; 
+    /* Ajustar el texto largo para evitar overflow */  
+    word-wrap: break-word; 
+    /* Compatibilidad con navegadores más antiguos */ 
+    width: 100%; /* Asegurar que el contenido no se desborde */ 
+    box-sizing: border-box;}
+.highlight {  
+    font-weight: bold;  
+    text-decoration: underline;
+}
+.form-continer {  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: space-between;  
+    align-items: center;  
+    font-size: 1.2rem;  
+    border: 4px solid #1b4965; 
+    border-radius: 4%;  
+    padding: 1rem; 
+    max-width: 700px;  
+    width: 100%;  
+    overflow: hidden;  
+    text-align: center; 
+    color: #1b4965;  
+    margin: 0 auto;
+}
+form {  
+    width: 100%;  
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem;
+}
+.label-input-container {  
+    display: flex;  
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+form label {  
+    flex: 1;  
+    text-align: left;  
+    margin-right: 1rem;
+}
+input[type='text'],input[type='email'],input[type='tel'],textarea {  
+    flex: 2;  
+    width: 100%; 
+    /* Asegurar que todos los inputs y textarea ocupen el 100% del ancho disponible */  
+    box-sizing: border-box; 
+    /* Evitar que el padding haga que los elementos crezcan más allá del contenedor */  
+    padding: 0.5rem;
+}
+textarea {  
+    height: 6rem;
+}
+.submit {  
+    display: flex;  justify-content: center;  
+    margin-top: 1rem;  
+    width: 100%;
+}input[type='submit'] {  
+    padding: 0.8rem 3rem;  
+    cursor: pointer;  
+    font-size: 1rem;  
+    background-color: #1b4965;  
+    color: #ffffff;  
+    width: auto;  
+    max-width: 800px;}
+.office-section {  
+    text-align: center;  
+    margin: 1rem auto;  
+    max-width: 700px;  
+    padding: 1rem;}
+.office-content {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: flex-start;  
+    gap: 1rem;  
+    margin-top: 1rem;
+}
+.map-container img {  
+    max-width: 100%;  
+    height: auto;  
+    border: 2px solid #1b4965;  
+    border-radius: 4%;
+}
+.office-info {  
+    text-align: left;  
+    flex: 1;  
+    font-size: 1.1rem;
+}
+
 @media (max-width: 768px) {  
 
     input:checked ~ .menu {   
@@ -331,6 +443,53 @@ div a{
         flex-direction: column-reverse;
     }
 
+    /* ! Cambios PABLO - mobile */  
+    .contact-main h1 {    
+        font-size: 1.5rem;  
+    }  
+    .contact-information-continer {    
+        padding: 1rem;   
+        margin: 0.5rem 1rem;    
+        font-size: 1rem;   
+        max-width: 60rem;   
+        width: 90%;  }  
+    .highlight {    
+        font-weight: bold;   
+        text-decoration: underline;
+    }  
+    .form-continer {    
+        font-size: 1rem;   
+        max-width: 60rem;  
+        width: 70%;  
+    }  
+    .label-input-container {   
+        flex-direction: column; /* Apilar label y input */  
+        align-items: center; /* Centrar elementos */  
+    }  
+    form label,  input[type='text'],  input[type='email'],  input[type='tel'],  textarea {    
+        text-align: center;   
+        width: 100%;  
+    }  
+    input[type='text'],  input[type='email'],  input[type='tel'],  textarea {  
+        flex: unset;  
+    } 
+    input[type='submit'] { 
+        width: 50%; 
+        max-width: none; 
+        padding: 1rem;  
+        font-size: 1rem; 
+    } 
+    .office-content {   
+        flex-direction: column;   
+        align-items: center;  
+    } 
+    .office-section {   
+        max-width: 60rem; 
+        width: 70%; 
+    }  
+    .map-container img { 
+        max-width: 80%; 
+    }
 
 }
 
