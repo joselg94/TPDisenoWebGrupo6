@@ -28,10 +28,88 @@
         </ul>
     </nav>
 
-    <main>
-        <div>
-            <p>En Contrucción</p>
+    <main class="contact-main">
+      <h1>Contacto</h1>
+      <div class="contact-information-continer">
+        <h3>Cloud Consulting</h3>
+        <p>
+          <span class="highlight">Mail:</span> contacto@cloudconsulting.com.ar
+        </p>
+        <p><span class="highlight">Telefono:</span> +54 9 1154552365</p>
+        <p>
+          <span class="highlight">Direccion:</span> Lima 757, C1073 Cdad.
+          Autónoma de Buenos Aires
+        </p>
+      </div>
+      <div class="form-continer">
+        <h3>Consultas</h3>
+        <form action="">
+          <div class="label-input-container">
+            <label for="name">Nombre y Apellido</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="label-input-container">
+            <label for="email">Correo electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="label-input-container">
+            <label for="phone">Teléfono</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+            />
+          </div>
+          <div class="label-input-container">
+            <label for="message">Consulta</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+          </div>
+          <div class="submit">
+            <input
+              type="submit"
+              value="Enviar"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="office-section">
+        <h3>Nuestra Oficina</h3>
+        <div class="office-content">
+          <div class="map-container">
+            <img
+              src="mapa-img.png"
+              alt="Mapa de ubicación"
+            />
+          </div>
+          <div class="office-info">
+            <p>
+              <strong>Dirección:</strong> Lima 757, C1073 Cdad. Autónoma de
+              Buenos Aires
+            </p>
+            <p>
+              <strong>Horarios de atención:</strong> Lunes a Viernes de 9 a 18
+              horas
+            </p>
+          </div>
         </div>
+      </div>
     </main>
 
     <footer class="footer-content">
