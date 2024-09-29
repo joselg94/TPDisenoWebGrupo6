@@ -1,3 +1,16 @@
 main {
     display: block;
 }
+
+@media (max-width: 768px) {
+    .description-box-serv {
+        width: 40%;
+    }
+    .contenedor-team {
+        width: 90%;
+        display: block;
+    }
+    .team-member-serv {
+        width: 40%;
+    }
+}
