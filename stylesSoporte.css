@@ -10,9 +10,8 @@
 
 
 .description-boxS {
-    padding: 20px;
+    padding:1rem;
     width: auto;
-    text-align: center;
     text-align: justify;
     color: #1B4965;
 }
@@ -25,8 +24,7 @@
 
 .serviciosIcono {
     background-color: #b5bbbe57;
-    padding: 1%;
-    width: auto;
+    width: 100%;
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -34,6 +32,8 @@
     color: #1B4965;
     display: flex;
     justify-content: space-between;
+    padding-bottom:1rem;
+    position: relative;
 
 }
 
@@ -42,25 +42,30 @@
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-     gap: 20px; /* Espacio entre las imágenes */
-margin-left:5rem;
-margin-right:5rem;
+    gap: 20px; /* Espacio entre las imágenes */
+    width: 100%; /* Asegura que el ancho sea del 100% de la ventana */
+    position: relative; /* Para evitar el desbordamiento */
+    left: 50%; /* Centra el contenedor */
+    transform: translateX(-50%); /* Ajusta para centrar */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    padding: 0 5rem; /* Mantiene el espacio interno deseado */
 
 }
 
 .service {
     flex: 1 1 1; /* Permite que las imágenes crezcan y se reduzcan, y establece un ancho base */
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    width:100%;
 }
 
 .img {
-    width: 20rem; /* Imágenes ocupan el 100% del ancho del contenedor */    
+    width: 14rem; /* Imágenes ocupan el 100% del ancho del contenedor */    
     border-radius: 50%;
-    height: 20rem;
-    margin-left:9rem;
-    margin-right: 7rem;
+    height: 14rem;
+/*     margin-left:3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem; */
    
     
 }
@@ -88,7 +93,8 @@ margin-right:5rem;
 }
 
 .image-container img {
-    width: 14rem; /* Ajusta el tamaño de la imagen */
+    width: 13rem; /* Ajusta el tamaño de la imagen */
+    height: 13rem;
     border-radius: 50%; /* Hace que la imagen sea redonda */
     object-fit: cover; /* Asegura que la imagen mantenga su forma redonda */
     margin-left:10rem;
@@ -104,13 +110,14 @@ margin-right:5rem;
 }
 
 
+
 @media (max-width: 768px) {
     .service img {
         width: 5rem; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
         height: 5rem;
-        margin-top: 1rem;
+/*         margin-top: 1rem;
         margin-left:2rem;
-        margin-right: 2rem;
+        margin-right: 2rem; */
     }
 
     .nosotros5{
@@ -119,18 +126,27 @@ margin-right:5rem;
     }
 
     .serviciosIcono {
-        margin-left:5rem;
-    margin-right: 5rem;
+    position: absolute;
+    margin-top: 28rem;
+    width: 100%;
+/*     margin-left: 5rem; */
+/*     margin-right: 5rem; */
+
     
     }
 
 .grid-section {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-template-columns: 4fr; /* Cambia a una sola columna en pantallas pequeñas */
+    margin-top: 35rem;
+    width: 100%;
+    margin-left: 0rem;
+    
 }
 
 .grid-item {
     flex-direction: column; /* Alinea imagen y texto en columna */
     align-items: center; /* Centra todo el contenido */
+    
 }
 
 .image-container img  {
@@ -138,6 +154,16 @@ margin-right:5rem;
 }
 
 .text-container {
-    margin-left:0rem;
+   text-align: justify;
+   margin-left: 0rem;
+   padding: 2rem;
 }
+.description-boxS{
+    position: absolute;
+    margin-top: 7rem;
+}
+.team-containerDesc{
+    padding:0;
+    border: black 2px;
+} 
 }
