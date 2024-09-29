@@ -3,14 +3,19 @@ main {
 }
 
 @media (max-width: 768px) {
-    .description-box-serv {
-        width: 40%;
+    description-box-serv {
+        width: 90%;
+        font-size: 8px;
+        /
+        margin: 10px; /* Separación de 10px alrededor de cada caja */
     }
     .contenedor-team {
         width: 90%;
         display: block;
+        margin: 10px; /* Separación de 10px alrededor de cada caja */
     }
     .team-member-serv {
-        width: 40%;
+        width: 90%;
+        margin: 10px; /* Separación de 10px alrededor de cada caja */
     }
 }
