@@ -569,6 +569,9 @@ main h1 {
     .map-container img { 
         max-width: 80%; 
     }
+    .description-container {
+        width:100%;
+    }
 
 }
 
