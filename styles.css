@@ -142,7 +142,7 @@ ul{
 }
 
 
-li {  
+nav ul li {  
     display: block;
     margin: 0.1rem;
     padding: 0.5rem;
