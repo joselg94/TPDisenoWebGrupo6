@@ -51,6 +51,7 @@ body{
     height: auto;
     border: 1px solid #ccc;
     border-radius: 10px;
+    height: 65%;
 }
 
 /* Sección de Tecnologías */
@@ -104,7 +105,7 @@ body{
 .project-item {
     text-align: center; /* Centra el contenido del div */
     margin: 20px auto; /* Añade margen para separar los elementos */
-    max-width: 400px; /* Define un ancho máximo */
+    max-width: 500px; /* Define un ancho máximo */
 }
 
 .project-image {
