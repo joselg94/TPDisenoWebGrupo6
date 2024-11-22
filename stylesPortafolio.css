@@ -39,19 +39,26 @@ body{
 }
 
 .project-item {
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Alinea elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos verticalmente */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Espaciado externo */
+    border: 1px solid #ccc; /* Borde para resaltar la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    background-color: #fff; /* Fondo blanco */
+    max-width: 400px; /* Ancho máximo */
+    word-wrap: break-word; /* Evita que las palabras largas desborden */
+    overflow: hidden; /* Oculta contenido que desborde */
 }
 
 .project-item .project-image {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    height: 65%;
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Redondear esquinas */
+    margin-bottom: 10px; /* Espaciado debajo de la imagen */
 }
 
 /* Sección de Tecnologías */
